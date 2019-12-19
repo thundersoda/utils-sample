@@ -23,17 +23,16 @@ public class LocationMain extends Activity {
         context = LocationMain.this;
         fusedLocationProviderClient = LocationServices.getFusedLocationProviderClient(context);
 
-        fusedLocationProviderClient.getLastLocation()
-            .addOnSuccessListener(LocationMain.this, new OnSuccessListener<Location>() {
-                @Override
-                public void onSuccess(Location location) {
-                    if(location != null) {
-                        Toast.makeText(
-                                context,
-                                "Lat:" + location.getLatitude() + " " + "Lon:" + location.getLongitude(),
-                                Toast.LENGTH_LONG).show();
-                    }
+        fusedLocationProviderClient.getLastLocation().addOnSuccessListener(LocationMain.this, new OnSuccessListener<Location>() {
+            @Override
+            public void onSuccess(Location location) {
+                if(location != null) {
+                    Toast.makeText(
+                            context,
+                            "Lat:" + location.getLatitude() + " " + "Lon:" + location.getLongitude(),
+                            Toast.LENGTH_LONG).show();
                 }
-            });
+            }
+        });
     }
 }
