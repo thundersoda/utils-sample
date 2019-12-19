@@ -49,13 +49,4 @@ public class YouTubeActivity extends YouTubeBaseActivity implements YouTubePlaye
     public void onInitializationFailure(YouTubePlayer.Provider provider, YouTubeInitializationResult youTubeInitializationResult) {
         Toast.makeText(this, "Ha ocurrido un error, vuelve a intentarlo", Toast.LENGTH_LONG).show();
     }
-
-    protected YouTubePlayer.Provider getYouTubePlayerProvider() {
-        return (YouTubePlayerView)findViewById(R.id.youtube_view);
-    }
-
-    //1- Crear proyecto en el developers console
-    //2- Crear una API Key, obtener sha-1 del keystore
-    //3- Meter los jars del sample en la carpeta lib
-    //4- Ver Proyecto de ejemplo.
 }
