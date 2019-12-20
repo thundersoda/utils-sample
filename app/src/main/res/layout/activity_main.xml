@@ -9,14 +9,12 @@
     <Button
         android:id="@+id/mvc_btn"
         android:layout_width="match_parent"
-        android:visibility="gone"
         android:layout_height="wrap_content"
         android:text="Ejemplo MVC" />
 
     <Button
         android:id="@+id/location_btn"
         android:layout_width="match_parent"
-        android:visibility="gone"
         android:layout_height="wrap_content"
         android:text="Ejemplo Ubicacion" />
 
@@ -24,14 +22,12 @@
         android:id="@+id/location_update_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:visibility="gone"
         android:text="Ejemplo Ubicacion Periódica" />
 
     <Button
         android:id="@+id/youtube_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:visibility="gone"
         android:text="Ejemplo Video de YouTube/API" />
 
     <Button
