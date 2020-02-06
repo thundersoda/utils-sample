@@ -28,6 +28,8 @@ public class KeyValueActivity extends Activity {
                     JSONObject object = jsonArray.getJSONObject(i);
                     object.put("objectName", temp);
                 }
+            // Usamos el arreglo con el nuevo objeto agregado a cada Object de la Lista.
+            // yourListView.setAdapter(...  ..., jsonArray);
             }
         } catch (JSONException e) {
             e.printStackTrace();
