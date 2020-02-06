@@ -45,7 +45,22 @@
         <activity
             android:name=".youtube.YouTubeActivity"
             android:screenOrientation="portrait"/>
-        <activity android:name=".floating_button.FloatingButonMenu" />
+
+        <activity
+            android:name=".floating_button.FloatingButonMenu"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".KeyValueActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".SortActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".FilterActivity"
+            android:screenOrientation="portrait"/>
 
     </application>
 
