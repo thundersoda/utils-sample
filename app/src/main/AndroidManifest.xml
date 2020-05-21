@@ -62,6 +62,9 @@
             android:name=".FilterActivity"
             android:screenOrientation="portrait"/>
 
+        <activity
+            android:name=".SharedPreferenceActivity" />
+
     </application>
 
 </manifest>

@@ -4,9 +4,13 @@ import android.Manifest;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
+import android.util.Log;
 import android.view.View;
+import android.view.WindowInsets;
 import android.widget.Button;
 
 import androidx.core.app.ActivityCompat;
@@ -19,7 +23,11 @@ import py.com.thundersoda.samplestudio.youtube.YouTubeActivity;
 
 public class MainActivity extends Activity {
     Context context;
-    Button mvc_btn, location_btn,location_update_btn, youtube_btn, floating_btn;
+    Button mvc_btn, location_btn,location_update_btn, youtube_btn, floating_btn, preference_btn;
+    SharedPreferences sharedPreferences;
+    SharedPreferences.Editor editor;
+    Boolean hasMarangatuPin = true;
+    Boolean bmp;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,12 +37,19 @@ public class MainActivity extends Activity {
         verifyLocationPermission(this);
 
         context = MainActivity.this;
+        sharedPreferences = PreferenceManager.getDefaultSharedPreferences(context);
         mvc_btn = findViewById(R.id.mvc_btn);
         youtube_btn = findViewById(R.id.youtube_btn);
         floating_btn = findViewById(R.id.floating_btn);
         location_btn = findViewById(R.id.location_btn);
         location_update_btn = findViewById(R.id.location_update_btn);
+        preference_btn = findViewById(R.id.preference_btn);
         btnMetodo();
+        Log.e("hasMarangatuPin", String.valueOf(hasMarangatuPin));
+
+        editor = sharedPreferences.edit();
+        editor.putBoolean("bmp", hasMarangatuPin);
+        editor.apply();
     }
 
     public static void verifyLocationPermission(Activity activity) {
@@ -79,6 +94,14 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(context, FloatingButonMenu.class);
+                startActivity(intent);
+            }
+        });
+
+        preference_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(context, SharedPreferenceActivity.class);
                 startActivity(intent);
             }
         });
