@@ -8,6 +8,7 @@ import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import androidx.core.app.ActivityCompat;
 
@@ -35,6 +36,8 @@ public class MainActivity extends Activity {
         location_btn = findViewById(R.id.location_btn);
         location_update_btn = findViewById(R.id.location_update_btn);
         btnMetodo();
+
+        Toast.makeText(context, "Hola prueba", Toast.LENGTH_LONG).show();
     }
 
     public static void verifyLocationPermission(Activity activity) {
