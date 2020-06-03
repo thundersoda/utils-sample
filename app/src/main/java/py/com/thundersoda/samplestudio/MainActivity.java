@@ -12,6 +12,7 @@ import android.util.Log;
 import android.view.View;
 import android.view.WindowInsets;
 import android.widget.Button;
+import android.widget.Toast;
 
 import androidx.core.app.ActivityCompat;
 
@@ -46,11 +47,16 @@ public class MainActivity extends Activity {
         location_update_btn = findViewById(R.id.location_update_btn);
         preference_btn = findViewById(R.id.preference_btn);
         btnMetodo();
+<<<<<<< HEAD
         Log.e("hasMarangatuPin", String.valueOf(hasMarangatuPin));
 
         editor = sharedPreferences.edit();
         editor.putBoolean("bmp", hasMarangatuPin);
         editor.apply();
+=======
+
+        Toast.makeText(context, "Hola prueba", Toast.LENGTH_LONG).show();
+>>>>>>> develop
     }
 
     public static void verifyLocationPermission(Activity activity) {
