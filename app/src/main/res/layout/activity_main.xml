@@ -48,10 +48,10 @@
         android:layout_height="wrap_content"
         android:text="Ejemplo  Main2" />
 
-    <TextView
+    <Button
+        android:id="@+id/main_3Btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="22sp"
-        android:text="asdasdasd"/>
+        android:text="Sample Merge Main Btn" />
 
 </LinearLayout>
