@@ -24,7 +24,7 @@ import py.com.thundersoda.samplestudio.youtube.YouTubeActivity;
 
 public class MainActivity extends Activity {
     Context context;
-    Button mvc_btn, location_btn,location_update_btn, youtube_btn, floating_btn, preference_btn;
+    Button mvc_btn, location_btn,location_update_btn, youtube_btn, floating_btn, preference_btn, main2;
     SharedPreferences sharedPreferences;
     SharedPreferences.Editor editor;
     Boolean hasMarangatuPin = true;
@@ -46,17 +46,15 @@ public class MainActivity extends Activity {
         location_btn = findViewById(R.id.location_btn);
         location_update_btn = findViewById(R.id.location_update_btn);
         preference_btn = findViewById(R.id.preference_btn);
+        main2 = findViewById(R.id.main2_btn);
         btnMetodo();
-<<<<<<< HEAD
         Log.e("hasMarangatuPin", String.valueOf(hasMarangatuPin));
 
         editor = sharedPreferences.edit();
         editor.putBoolean("bmp", hasMarangatuPin);
         editor.apply();
-=======
 
         Toast.makeText(context, "Hola prueba", Toast.LENGTH_LONG).show();
->>>>>>> develop
     }
 
     public static void verifyLocationPermission(Activity activity) {
@@ -109,6 +107,14 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(context, SharedPreferenceActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        main2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(context, Main2Activity.class);
                 startActivity(intent);
             }
         });
