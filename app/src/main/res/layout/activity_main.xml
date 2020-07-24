@@ -7,12 +7,6 @@
     android:orientation="vertical">
 
     <Button
-        android:id="@+id/mvc_btn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Ejemplo MVC" />
-
-    <Button
         android:id="@+id/location_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -50,6 +44,18 @@
 
     <Button
         android:id="@+id/main_3Btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sample Merge Main Btn" />
+
+    <Button
+        android:id="@+id/main_11Btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sample Merge Main Btn" />
+
+    <Button
+        android:id="@+id/main_4Btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Sample Merge Main Btn" />

@@ -40,7 +40,6 @@ public class MainActivity extends Activity {
 
         context = MainActivity.this;
         sharedPreferences = PreferenceManager.getDefaultSharedPreferences(context);
-        mvc_btn = findViewById(R.id.mvc_btn);
         youtube_btn = findViewById(R.id.youtube_btn);
         floating_btn = findViewById(R.id.floating_btn);
         location_btn = findViewById(R.id.location_btn);
@@ -63,13 +62,6 @@ public class MainActivity extends Activity {
         }
     }
     public void btnMetodo() {
-        mvc_btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(context, ModelMain.class);
-                startActivity(intent);
-            }
-        });
 
         location_update_btn.setOnClickListener(new View.OnClickListener() {
             @Override
