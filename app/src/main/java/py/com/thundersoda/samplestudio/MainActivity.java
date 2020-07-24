@@ -36,7 +36,7 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
 
         verifyLocationPermission(this);
-        //Test comment was edited
+        //Test comment was edited, ahora dice esto
 
         context = MainActivity.this;
         sharedPreferences = PreferenceManager.getDefaultSharedPreferences(context);

@@ -42,22 +42,4 @@
         android:layout_height="wrap_content"
         android:text="Ejemplo  Main2" />
 
-    <Button
-        android:id="@+id/main_3Btn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Sample Merge Main Btn" />
-
-    <Button
-        android:id="@+id/main_11Btn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Sample Merge Main Btn" />
-
-    <Button
-        android:id="@+id/main_4Btn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Sample Merge Main Btn" />
-
 </LinearLayout>
